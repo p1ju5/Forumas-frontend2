@@ -38,28 +38,29 @@ function Auth() {
 		})
 	}
 
-/* 	//initialize
-	if (!state.isInitialized) {
+	//initialize
+	if( !state.isInitialized )
+	{
 		//subscribe to app state changes
-		localStorage.when(localStorage.getItem("isLoggedIn"), () => {
+		appState.when(appState.isLoggedIn, () => {
 			//this will force component re-rendering
-			update(state => { });
+			update(state => {});
 		});
 
 		//indicate initialization is done
 		update(state => state.isInitialized = true);
-	} */
+	}
 
 	//render component html
 	let html =
 		<>
-			{appState.isLoggedIn &&
+			{!appState.isLoggedIn &&
 				<>
 					<Register />
 					<LogIn />
 				</>
 			}
-			{!appState.isLoggedIn &&
+			{appState.isLoggedIn &&
 				<StatusAndLogOut />
 			}
 		</>;
