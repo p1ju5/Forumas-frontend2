@@ -53,13 +53,13 @@ function Auth() {
 	//render component html
 	let html =
 		<>
-			{localStorage.getItem("isLoggedIn") == "false" &&
+			{!appState.isLoggedIn &&
 				<>
 					<Register />
 					<LogIn />
 				</>
 			}
-			{localStorage.getItem("isLoggedIn") == "true" &&
+			{appState.isLoggedIn &&
 				<StatusAndLogOut />
 			}
 		</>;
