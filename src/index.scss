@@ -1,0 +1,23 @@
+@import "~bootstrap/scss/bootstrap";
+
+//import fontawesome
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+
+//this will select theme for PrimeFaces
+@import "primereact/resources/themes/bootstrap4-light-blue/theme.css";
+
+//
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+
+//make sure content occupies full viewport
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+//import CSS fixes, if any
+//@import "css-fixes-primefaces.scss"

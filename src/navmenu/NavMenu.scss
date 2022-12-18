@@ -1,0 +1,231 @@
+a.nav-link.active {
+    font-weight: 600;
+	color:rgb(255, 255, 255);
+}
+
+ul, li {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	color: #8A8985; /* teksto spalva */
+	font-family: Arial, Helvetica, sans-serif; /* šriftas */
+	font-size: 12px; /* teksto dydis */
+	background-color: #e3e3e3;
+}
+
+a.links {
+	color: #fdfdfd;
+	text-decoration: none;
+}
+
+
+/* pagrindinis puslapio blokas */
+#body {
+	width: 900px;
+	margin: 0px auto; /* bloko centravimas puslapio viduje */
+}
+
+/* viršutinė puslapio dalis */
+#header {
+	width: 900px;
+	height: 60px;
+	background-color: rgb(255, 255, 255);
+	border-bottom: 4px solid #e3e3e3; /* rėmelis */
+	display: inline-block;
+}
+
+.slogan {
+	margin: 17px 0px 10px 25px;
+	color: #fcfcfc;
+	font-size: 22px;
+	display: inline-block;
+	position: relative;
+	text-align: left;
+}
+
+.slogan .text-wrapper {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.slogan .letter {
+	transform-origin: 50% 100%;
+	display: inline-block;
+}
+
+.topbutton {
+	margin: 10px 15px 10px 25px;
+	float: right;
+}
+
+/* turinio blokelis */
+#content {
+	background-color: #fff;
+	float: left;
+}
+
+/* pagrindinio meniu blokelis */
+#topMenu {
+	//border-bottom: 4px solid #e3e3e3; /* rėmelis */
+	float: left;
+}
+
+#topMenu li {
+	float: left; /* nustatome horizontalųjį meniu punktų lygiavimą */
+	list-style: none; /* paslepiame sąrašo stiliaus savybes */
+	margin: 10px 0px 10px 25px; /* nustatome meniu punktų ribas */
+}
+
+#topMenu li a {
+	text-decoration: none; /* paslepiame nuorodos pabraukimą */
+}
+
+#topMenu li a:hover {
+	text-decoration: underline; /* nustatome nuorodos pabraukimą užvedus pele */
+}
+
+#topMenu li a.active {
+	text-decoration: underline; /* nustatome aktyvaus meniu punkto pabraukimą */
+}
+
+/* pagrindinio meniu blokelis */
+#topMenus {
+	//border-bottom: 4px solid #e3e3e3; /* rėmelis */
+	float: left;
+}
+
+#topMenus li {
+	float: left; /* nustatome horizontalųjį meniu punktų lygiavimą */
+	list-style: none; /* paslepiame sąrašo stiliaus savybes */
+	margin: 10px 0px 10px 25px; /* nustatome meniu punktų ribas */
+}
+
+#topMenus li a {
+	text-decoration: none; /* paslepiame nuorodos pabraukimą */
+}
+
+#topMenus li a:hover {
+	text-decoration: underline; /* nustatome nuorodos pabraukimą užvedus pele */
+}
+
+#topMenus li a.active {
+	text-decoration: underline; /* nustatome aktyvaus meniu punkto pabraukimą */
+}
+
+/* kairysis puslapio blokelis */
+#contentLeft {
+	display: inline-block;
+	position: fixed;
+	width: 180px;
+}
+
+#contentLeft li {
+	list-style: none;
+	margin: 10px 0px 10px 25px;
+}
+
+#contentLeft li a {
+	text-decoration: none;
+}
+
+#contentLeft li a:hover {
+	text-decoration: underline;
+}
+
+#contentLeft li a.active {
+	text-decoration: underline; /* nustatome aktyvaus meniu punkto pabraukimą */
+}
+
+#contentLeft h2 {
+	font-size: 22px;
+	font-weight: normal;
+	color: #7D7764;
+	letter-spacing: -0.5px;	
+	margin: 10px 0px 0px 25px; 
+}
+
+
+/* turinio blokelis */
+#contentRight {
+	width: 699px;
+	min-height: 470px; /* minimalus blokelio aukštis */
+	border-left: 4px solid #e3e3e3;
+	float: left; /* blokelio pozicija */
+}
+
+h2#pageTitle {
+	font-size: 26px;
+	margin: 10px 0px 0px 15px;
+	font-weight: normal;
+}
+
+.newsItem {
+	border-bottom: 1px solid silver;
+}
+
+.newsItemLast {
+	border: 0px;
+}
+
+#contentRight p {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.newsItem p#title {
+	font-weight: bold;
+}
+
+
+/* apatinė puslapio dalis */
+#footer {
+	width: 900px;
+	height: 40px;
+	border: 1px solid silver;
+	float: left;
+	background-color: #6E6E6E;
+	color: #fff;
+}
+
+.btn {
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	width: 130px;
+	background-color: #2289b1;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #1c17c1;
+}
+
+.btn.active {
+	background-color: #2289b1;
+}
+
+.btn.top {
+	width: 115px;
+}
+
+.postbutton {
+	float: right;
+}
+
+.padding-left {
+	margin-left: 200px;
+}
+
+.padding-left2 {
+	margin-left: 300px;
+}
