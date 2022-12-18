@@ -53,13 +53,13 @@ function Auth() {
 	//render component html
 	let html =
 		<>
-			{!appState.isLoggedIn &&
+			{appState.isLoggedIn &&
 				<>
 					<Register />
 					<LogIn />
 				</>
 			}
-			{appState.isLoggedIn &&
+			{!appState.isLoggedIn &&
 				<StatusAndLogOut />
 			}
 		</>;
